@@ -1,0 +1,58 @@
+{
+  "name": "neoxr-bot",
+  "version": "1.0.0",
+  "description": "Simple WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neoxr/neoxr-bot.git"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "termux-whatsappbot",
+    "wa-bot",
+    "bot",
+    "termux-wabot"
+  ],
+  "author": "Wildan Izzudin",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/neoxr/neoxr-bot/issues"
+  },
+  "homepage": "https://github.com/neoxr/neoxr-bot#readme",
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.5.2",
+    "api2pdf": "^2.0.0",
+    "awesome-phonenumber": "^2.58.0",
+    "axios": "^0.21.3",
+    "cfonts": "^2.9.3",
+    "chalk": "^4.1.0",
+    "cheerio": "^1.0.0-rc.5",
+    "emoji-api": "^1.0.2",
+    "fake-useragent": "^1.0.1",
+    "figlet": "^1.5.2",
+    "file-type": "^16.1.0",
+    "form-data": "^4.0.0",
+    "g-i-s": "^2.1.6",
+    "html-entities": "^2.3.2",
+    "jsdom": "^17.0.0",
+    "lolcatjs": "^2.4.1",
+    "lyrics-parse": "^1.1.1",
+    "mime-types": "^2.1.32",
+    "moment-timezone": "^0.5.33",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7",
+    "qs": "^6.10.1",
+    "request": "^2.88.2",
+    "stormdb": "^0.5.2",
+    "syntax-error": "^1.4.0",
+    "translate-google-api": "^1.0.4",
+    "wa-sticker-formatter": "^3.6.0",
+    "xmlhttprequest": "^1.8.0",
+    "yargs": "^17.1.1",
+    "yt-search": "^2.10.0"
+  }
+}
