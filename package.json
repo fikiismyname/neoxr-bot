@@ -6,6 +6,10 @@
   "scripts": {
     "start": "node index.js"
   },
+  "engines": {
+	"node": "12.x",
+	"npm": "7.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neoxr/neoxr-bot.git"
@@ -47,6 +51,7 @@
     "path": "^0.12.7",
     "qs": "^6.10.1",
     "request": "^2.88.2",
+    "spinnies": "^0.5.1",
     "stormdb": "^0.5.2",
     "syntax-error": "^1.4.0",
     "translate-google-api": "^1.0.4",

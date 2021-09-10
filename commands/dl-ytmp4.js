@@ -9,6 +9,7 @@ exports.run = {
 		await conn.updatePresence(m.chat, Presence.composing)
 		if (!args || !args[0]) return m.reply(`• *Example* : ${isPrefix + command} https://youtu.be/PfKB5Zwvqqw`)
 		let json = await yts(text)
+		m.reply(_func.status.getdata)
 		let yt = json.all.find(video => video.seconds < 3600)
 		let server = (args[1] || servers[0]).toLowerCase()
 		let { dl_link, title, filesize, filesizeF } = await ytv(yt.url, servers.includes(server) ? server : servers[0])

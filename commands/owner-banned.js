@@ -31,11 +31,11 @@ exports.run = {
 		} conn.reply(m.chat, `❏  *B A N N E D*\n\n*“Successfully to put @${user.split`@`[0]} in the banned list.”*\n\n*Total : ${banned}*`, m)
 	} else if (command == 'unban') {
 		if (user == conn.user.jid) return m.reply(`*The fuck?*`)
-		if (userF[user].banned) return m.reply(`*Target not banned.*`)
+		if (!userF[user].banned) return m.reply(`*Target not banned.*`)
 		userF[user].banned = false
 		let banned = 0
 		for (let jid in userF) {
-			if (!userF[jid].banned) banned++
+			if (userF[jid].banned) banned++
 		} conn.reply(m.chat, `❏  *U N B A N N E D*\n\n*“Now @${user.split`@`[0]} can using BOT again.”*\n\n*Total : ${banned}*`, m)
 	}}},
 	owner: true

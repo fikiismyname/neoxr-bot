@@ -1,10 +1,14 @@
 module.exports = (conn, m) => {
+
 if (typeof global.db.users[m.sender] == 'undefined') {
 		global.db.users[m.sender] = {
 			banned: false,
-			limit: 50,
+			premium: false,
+			expired: 0,
+			limit: 10,
 			point: 0,
 			hit: 0,
+			lastclaim: 0,
 			lastseen: 0,
 			usebot: 0,
 			spam: 0,
@@ -26,21 +30,20 @@ if (typeof global.db.users[m.sender] == 'undefined') {
 			nolink: false,
 			novirtex: false,
 			expired: 0,
-			stay: false,
-        	chat: 0
+			stay: false
         }
 	}
 	
 	if (typeof global.db.private[m.chat] == 'undefined' && m.chat.endsWith('s.whatsapp.net')) {
 		global.db.private[m.chat] = {
-			mute: false,
-        	chat: 0
+			mute: false
         }
 	}
 	
 	if (typeof global.db.chats[m.chat] == 'undefined') {
 		global.db.chats[m.chat] = {
-			command: 0
+			command: 0,
+			chat: 0
         }
 	}
 }

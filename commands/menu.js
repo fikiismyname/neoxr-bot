@@ -5,7 +5,7 @@ exports.run = {
 		let setting = global.db.setting
 		let number = m.sender.split`@`[0]
 		await conn.updatePresence(m.chat, Presence.composing)
-		conn.send2ButtonLoc(m.chat, await _func.buffer(setting.cover), menu(number, isPrefix, readMore, setting), global.footer, 'RULES', `${isPrefix}rules`, `OWNER`, `${isPrefix}owner`, m)
+		conn.send2ButtonLoc(m.chat, await _func.buffer(setting.cover), menu(number, isPrefix, readMore, setting), global.footer, 'SCRIPT', `${isPrefix}script`, `OWNER`, `${isPrefix}owner`, m)
 	},
 	error: false
 }
@@ -23,6 +23,7 @@ ${readMore}
 *01.*  P O I N T & L I M I T
 
 	›  ${prefix}exchange
+	›  ${prefix}claim
 	›  ${prefix}limit
 	›  ${prefix}me
 	›  ${prefix}point
@@ -68,6 +69,7 @@ ${readMore}
 	›  ${prefix}group
 	›  ${prefix}hidetag
 	›  ${prefix}kick
+	›  ${prefix}mute
 	›  ${prefix}left
 	›  ${prefix}textleft
 	›  ${prefix}textwel
@@ -77,7 +79,6 @@ ${readMore}
 *06.*  S P E C I A L
 
 	›  ${prefix}botstat
-	›  ${prefix}infobot
 	›  ${prefix}listban
 	›  ${prefix}listblock    
 	›  ${prefix}owner

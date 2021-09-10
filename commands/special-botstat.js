@@ -41,10 +41,12 @@ return `
 *02.*  S Y S T E M
 
 	›  Auto Backup : ${_func.swit(s.autobackup)}
+	›  Auto Clear : ${_func.swit(s.autoclear)}
 	›  Auto Read : ${_func.swit(s.autoread)}
 	›  Simsimi : ${_func.swit(s.simsimi)}
 	›  Self Mode : ${_func.swit(s.public)}
 	›  Only Group : ${_func.swit(s.groupOnly)}
+	›  Prefix : ${s.multiprefix ? 'Multi' : s.onlyprefix}
     
 ${footer}`
 }

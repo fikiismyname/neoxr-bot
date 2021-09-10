@@ -17,13 +17,17 @@ return `
 
 	›  ${prefix}addown
 	›  ${prefix}delown
-	›  ${prefix}set
-	›  ${prefix}setcover
 	›  ${prefix}enable
 	›  ${prefix}disable
+	›  ${prefix}setmsg
+	›  ${prefix}setwm
+	›  ${prefix}setcover
+	›  ${prefix}setheader
+	›  ${prefix}setfooter
 	
 *02.*  H E L P E R
 	
+	›  ${prefix}backup
 	›  ${prefix}ban
 	›  ${prefix}bc
 	›  ${prefix}bcpc
@@ -40,9 +44,16 @@ return `
 	›  ${prefix}autoread
 	›  ${prefix}autoclear
 	›  ${prefix}global
+	›  ${prefix}multiprefix
 	›  ${prefix}self
 	›  ${prefix}simsimi
 	
+*04.*  A D V A N C E
+
+	›  $ -- Terminal
+	›  > -- JS Evaluate 
+	›  => -- JS Evaluate (Return)
+
 ${footer}
 `
 }

@@ -1,4 +1,4 @@
-let { Presence, GroupSettingChange } = require('@adiwajshing/baileys')
+let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['clear', 'clearall', 'clearpc', 'cleargc'],
 	async: async (m, { conn, _func, command }) => {
