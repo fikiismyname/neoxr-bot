@@ -28,7 +28,7 @@ exports.run = {
 		y += `	›  *Banned* : ${_func.check(user.banned)}\n`
 		y += `	›  *Owner* : ${_func.check(setting.owner.includes(m.sender.split`@`[0]))}\n`
 		y += `	›  *Premium* : ${_func.check(user.premium)}\n`
-		y += `	›  *Expired* : ${user.expired == 0 ? '-' : _func.expire(user.expired)}\n\n`
+		y += `	›  *Expired* : ${user.expired == 0 ? '-' : _func.expire(user.expired - new Date() * 1)}\n\n`
 		y += global.footer
 		conn.sendImage(m.chat, pic, y, m)
 	}},

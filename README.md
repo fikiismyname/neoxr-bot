@@ -6,6 +6,12 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/neoxr/neoxr-bot/)
 
+### Requirements
+
+* [Node.js](https://nodejs.org/en/)
+* [Git](https://git-scm.com/downloads)
+* [FFmpeg](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z)
+
 ### Install ⬇️
 
 ```bash

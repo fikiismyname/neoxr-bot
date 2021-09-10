@@ -28,7 +28,6 @@ ${readMore}
 	›  ${prefix}me
 	›  ${prefix}point
 	›  ${prefix}profile
-	›  ${prefix}rank
 
 *02.*  S T I C K E R - T O O L S
 
