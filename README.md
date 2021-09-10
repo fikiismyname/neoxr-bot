@@ -1,11 +1,6 @@
-<div align="center">
-<img alt="GitHub" src="https://img.shields.io/badge/WHATSAPP%20BOT-25D32?style=for-the-badge&logoColor=darkgreen"/>
-<br><br>
-  
-> A whatsapp bot made using adiwajshing/Baileys library
  <p>
   <img src ="https://img.shields.io/badge/npm-v7.20.3-green.svg" />
-  <img src="https://img.shields.io/badge/node-%3E=16.6.1-darkgreen.svg" />
+  <img src="https://img.shields.io/badge/node-%3E=17.x-darkgreen.svg" />
 </p>
 </div>
 
