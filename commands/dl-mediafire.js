@@ -14,8 +14,7 @@ exports.run = {
 		let y = `•  *Name* : ${unescape(decode(json.data.filename))}\n`
 		y += `•  *Mime* : ${json.data.mime}\n`
 		y += `•  *Size* : ${json.data.size}\n`
-		y += `•  *Extension* : ${json.data.extension}\n\n`
-		y += global.footer
+		y += `•  *Extension* : ${json.data.extension}`
 		conn.updatePresence(m.chat, Presence.composing) 
 		let chSize = _func.overSize(json.data.size, 80)
 		if(chSize.oversize) return m.reply(`• *The file size you requested is ${json.data.size}, the size exceeds the limit, please download it yourself via this link* :\n\n• ${await _func.crop(json.data.link)}*`)

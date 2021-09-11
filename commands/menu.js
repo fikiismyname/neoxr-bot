@@ -40,7 +40,9 @@ ${readMore}
 	
 *03.*  D O W N L O A D E R
 
+	›  ${prefix}fb *link*
 	›  ${prefix}ig *link*
+	›  ${prefix}igs *username*
 	›  ${prefix}mediafire *query*
 	›  ${prefix}play *query*
 	›  ${prefix}tikmp3 *link*
@@ -79,7 +81,8 @@ ${readMore}
 
 	›  ${prefix}botstat
 	›  ${prefix}listban
-	›  ${prefix}listblock    
+	›  ${prefix}listblock
+	›  ${prefix}listprem
 	›  ${prefix}owner
 	›  ${prefix}tools
 	›  ${prefix}report

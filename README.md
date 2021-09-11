@@ -22,7 +22,7 @@
 ### Get Started
 
 ```bash
-> npm start
+> npm . <sesson_name>
 ```
 
 ## 🙏 Special Thanks to

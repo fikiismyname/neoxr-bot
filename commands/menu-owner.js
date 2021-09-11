@@ -37,6 +37,7 @@ return `
 	›  ${prefix}clearpc
 	›  ${prefix}cleargc
 	›  ${prefix}unban
+	›  ${prefix}restart
 	
 *03.*  S Y S T E M
 
