@@ -52,15 +52,7 @@ module.exports = async (conn, m, _func, isOwner, isBlock, isAdmin, isBotAdmin) =
 			if (stdout) return m.reply(stdout)
 		})
 	}
-	
-	// an example auto response
-	if (!m.fromMe && m.text.match(/(mksh|mksih|mkasih|makasih|thanks|thx|tq)/gi)) {
-		await conn.updatePresence(m.chat, Presence.composing)
-		conn.reply(m.chat, `*Ur Welcome. :)*`, m)
-	}
-	
 	// here your code . . . . :v
-	
 }
 
 let file = require.resolve(__filename)

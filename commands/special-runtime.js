@@ -5,7 +5,7 @@ exports.run = {
 		conn.updatePresence(m.chat, Presence.composing)
 		const _uptime = process.uptime() * 1000
   	  const uptime = _func.toClock(_uptime) 
-		m.reply(uptime)
+		m.reply(`*Running for : [ ${uptime} ]*)
 	},
 	error: false
 }
