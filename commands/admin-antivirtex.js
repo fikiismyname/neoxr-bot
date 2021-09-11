@@ -12,7 +12,7 @@ exports.run = {
 		} else if (args[0] == 'off') {
 			if (!setting.novirtex) return m.reply(`*Anti Virtex already OFF.*`)
 			setting.novirtex = false
-			m.reply(`Anti Virtex successfully turned off.*`)
+			m.reply(`*Anti Virtex successfully turned off.*`)
 		}
 	},
 	admin: true,

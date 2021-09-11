@@ -12,7 +12,7 @@ exports.run = {
 		} else if (args[0] == 'off') {
 			if (!setting.nobadword) return m.reply(`*Word Filter already OFF.*`)
 			setting.nobadword = false
-			m.reply(`Word Filter successfully turned off.*`)
+			m.reply(`*Word Filter successfully turned off.*`)
 		}
 	},
 	admin: true,

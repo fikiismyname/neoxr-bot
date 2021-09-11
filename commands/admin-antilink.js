@@ -12,7 +12,7 @@ exports.run = {
 		} else if (args[0] == 'off') {
 			if (!setting.nolink) return m.reply(`*Anti Link already OFF.*`)
 			setting.nolink = false
-			m.reply(`Anti Link successfully turned off.*`)
+			m.reply(`*Anti Link successfully turned off.*`)
 		}
 	},
 	admin: true,

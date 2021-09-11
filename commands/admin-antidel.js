@@ -12,7 +12,7 @@ exports.run = {
 		} else if (args[0] == 'off') {
 			if (!setting.nodelete) return m.reply(`*Anti Delete already OFF.*`)
 			setting.nodelete = false
-			m.reply(`Anti Delete successfully turned off.*`)
+			m.reply(`*Anti Delete successfully turned off.*`)
 		}
 	},
 	admin: true,

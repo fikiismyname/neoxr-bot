@@ -12,7 +12,7 @@ exports.run = {
 		} else if (args[0] == 'off') {
 			if (!setting.localonly) return m.reply(`*Localonly already OFF.*`)
 			setting.localonly = false
-			m.reply(`Localonly successfully turned off.*`)
+			m.reply(`*Localonly successfully turned off.*`)
 		}
 	},
 	admin: true,
