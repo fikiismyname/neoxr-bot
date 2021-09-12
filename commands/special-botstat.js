@@ -44,7 +44,7 @@ return `
 	›  Auto Clear : ${_func.swit(s.autoclear)}
 	›  Auto Read : ${_func.swit(s.autoread)}
 	›  Simsimi : ${_func.swit(s.simsimi)}
-	›  Self Mode : ${s.public ? 'OFF' : 'ON'}
+	›  Self Mode : ${s.public ? '*OFF*' : '*ON*'}
 	›  Only Group : ${_func.swit(s.groupOnly)}
 	›  Prefix : ${s.multiprefix ? 'Multi' : s.onlyprefix}
     
