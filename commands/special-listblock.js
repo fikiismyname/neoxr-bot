@@ -10,7 +10,7 @@ exports.run = {
 			return name
 		} 
 		if (lb.length == 0) return m.reply(`*No users are blocked.*`)
-		return conn.go(m.chat, `❏  *L I S T B L O C K*\n\n*“There are ${userBan.length} users who have been blocked.”*\n\n${lb.map(v => '  ›  *Name*  :  ' + gName(v) + '\n     wa.me/' + v.replace(/@.+/, '')).join('\n') + '\n\n' + global.footer}`, global.headtext, [m.sender])
+		return conn.go(m.chat, `❏  *L I S T B L O C K*\n\n*“There are ${userBan.length} users who have been blocked.”*\n\n${lb.map(v => '  ›  *Name*  :  ' + gName(v) + '\n     wa.me/' + v.replace(/@.+/, '')).join('\n') + '\n\n' + global.footer}`, global.header, [m.sender])
 	},
 	error: false
 }
