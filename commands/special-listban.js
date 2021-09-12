@@ -14,7 +14,7 @@ exports.run = {
 			return name
 		} 
 		if (userBan.length == 0) return m.reply(`*No users are banned.*`)
-		return conn.go(m.chat, `❏  *L I S T B A N*\n\n*“There are ${userBan.length} users who have been banned in the database.”*\n\n${userBan.map(v => '  ›  *Name*  :  ' + gName(v) + '\n     wa.me/' + v.replace(/@.+/, '')).join('\n') + '\n\n' + global.footer}`, global.headtext, [m.sender])
+		return conn.go(m.chat, `❏  *L I S T B A N*\n\n*“There are ${userBan.length} users who have been banned in the database.”*\n\n${userBan.map(v => '  ›  *Name*  :  ' + gName(v) + '\n     wa.me/' + v.replace(/@.+/, '')).join('\n') + '\n\n' + global.footer}`, global.header, [m.sender])
 	},
 	error: false
 }

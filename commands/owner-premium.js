@@ -3,7 +3,7 @@ exports.run = {
 	usage: ['addprem', 'delprem'],
 	async: async (m, { conn, text, command, participants }) => {
 		conn.updatePresence(m.chat, Presence.composing)
-		let [ no, days ] = text.split`|`
+		let [ no, days ] = text.split`,`
 		console.log([ no, days ])
 		let isDay = (typeof days !== 'undefined') ? days.trim() : 30 // < default 30 days
 		let day = 86400000 * isDay
@@ -21,7 +21,7 @@ exports.run = {
 			}
 		} catch (e) {
 	} finally {
-		let userF = global.users
+		let userF = global.db.users
 		if (typeof userF[user] == 'undefined') return m.reply(`*Can't find user data.*`)
 	if (command == 'addprem') { 
 		if (isNaN(isDay)) return m.reply(`*The number of days must be a number.*`)
