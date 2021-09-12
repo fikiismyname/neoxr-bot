@@ -3,7 +3,7 @@ exports.run = {
 	usage: ['setprefix', 'addprefix', 'delprefix', 'multiprefix'],
 	async: async (m, { conn, args, _func, isPrefix, command }) => {
 		await conn.updatePresence(m.chat, Presence.composing)
-		let setting = global.db.setting
+		let setting = global.setting
 		let ignore = [ '>', '=', '$' ]
 		if (command == 'setprefix') {
 			if (!args || !args[0]) return m.reply(`• *Example* : ${isPrefix + command} #`)

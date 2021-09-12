@@ -9,7 +9,7 @@ exports.run = {
 		y += `Someone sends a report from chat : *${conn.getName(m.chat)}*\n\n`
 		y += `• *Sender* : @${m.sender.split`@`[0]}\n`
 		y += `• *Message* : ${text}`
-		conn.reply(global.db.setting.owner[0] + '@c.us', y, m).then(() => {
+		conn.reply(global.setting.owner[0] + '@c.us', y, m).then(() => {
 			m.reply(`*Report sent successfully.*`)
 		})
 	},

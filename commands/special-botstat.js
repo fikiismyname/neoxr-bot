@@ -8,13 +8,13 @@ exports.run = {
 		const groupsIn = groups.filter(v => !v.read_only)
 		const chats = conn.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net') && !v.read_only && v.message).map(v => v.jid).length
 		const gcleft = groups.length - groupsIn.length
-		const total = Object.keys(global.db.chats).length
-		const users = Object.keys(global.db.users).length
-		const s = global.db.setting
+		const total = Object.keys(global.chats).length
+		const users = Object.keys(global.users).length
+		const s = global.setting
 		const blocked = conn.blocklist.length
 		const _uptime = process.uptime() * 1000
   	  const uptime = _func.toClock(_uptime) 
-    	let user = global.db.users
+    	let user = global.users
 		let banned = 0
 		for (let jid in user) {
 			if(user[jid].banned == true) banned++

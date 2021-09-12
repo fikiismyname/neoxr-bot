@@ -3,7 +3,7 @@ exports.run = {
 	usage: ['addown', 'delown'],
 	async: async (m, { conn, text, isPrefix, command }) => {
 		conn.updatePresence(m.chat, Presence.composing)
-		let owner = global.db.setting.owner
+		let owner = global.setting.owner
 		let number = isNaN(text) ? (text.startsWith('+') ? text.replace(/[()+\s-]/g, '') : (text).split`@`[1]) : text
 		if (!text && !m.quoted) return conn.reply(m.chat, `*Mention or Reply chat target.*`, m)
 		if (isNaN(number)) return conn.reply(m.chat, `*Invalid number.*`, m)

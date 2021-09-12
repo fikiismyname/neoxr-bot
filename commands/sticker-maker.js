@@ -3,7 +3,7 @@ exports.run = {
 	usage: ['s', 'sgif', 'sk', 'stiker', 'sticker'],
 	async: async (m, { conn, _func }) => {
 	try {
-		let exif = global.db.setting
+		let exif = global.setting
 		await conn.updatePresence(m.chat, Presence.composing)
 		let q = m.quoted ? m.quoted : m
    	 let mime = (q.msg || q).mimetype || ''

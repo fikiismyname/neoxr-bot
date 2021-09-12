@@ -21,7 +21,7 @@ exports.run = {
 			}
 		} catch (e) {
 	} finally {
-		let userF = global.db.users
+		let userF = global.users
 		if (typeof userF[user] == 'undefined') return m.reply(`*Can't find user data.*`)
 	if (command == 'addprem') { 
 		if (isNaN(isDay)) return m.reply(`*The number of days must be a number.*`)

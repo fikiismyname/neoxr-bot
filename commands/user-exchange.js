@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['exchange'],
 	async: async (m, { conn, args }) => {
-		let user = global.db.users[m.sender]
+		let user = global.users[m.sender]
 		let price = 5
 		await conn.updatePresence(m.chat, Presence.composing)
 		if (isNaN(args[0])) return m.reply(`*Limit must be a number.*`)

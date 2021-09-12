@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['listban'],
 	async: async (m, { conn, _func, isPrefix }) => {
-		let users = global.db.users
+		let users = global.users
 		conn.updatePresence(m.chat, Presence.composing)
 		userBan = []
 		for (let jid in users) {

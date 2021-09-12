@@ -3,8 +3,8 @@ exports.run = {
 	usage: ['me'],
 	async: async (m, { conn, _func, isPrefix }) => {
 		await conn.updatePresence(m.chat, Presence.composing)
-		let user = global.db.users[m.sender]
-		let setting = global.db.setting
+		let user = global.users[m.sender]
+		let setting = global.setting
 		let pic = await _func.buffer('./media/images/default.jpg')
 	try {
 		pic = await _func.buffer(await conn.getProfilePicture(m.sender))

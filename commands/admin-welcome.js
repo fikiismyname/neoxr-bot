@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['welcome'],
 	async: async (m, { conn, _func, args, isPrefix, command }) => {
-		let setting = global.db.groups[m.chat]
+		let setting = global.groups[m.chat]
 		await conn.updatePresence(m.chat, Presence.composing)
 		if (!args || !args[0]) return conn.send2ButtonLoc(m.chat, await _func.buffer(global.cover), `*This command to turn off and turn on welcome message in group.*`, global.footer, 'ON', `${isPrefix + command} on`, 'OFF', `${isPrefix + command} off`, m)
 		if (args[0] == 'on') {

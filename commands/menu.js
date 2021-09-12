@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['bot', 'menu', 'help'],
 	async: async (m, { conn, _func, isPrefix }) => {
-		let setting = global.db.setting
+		let setting = global.setting
 		let number = m.sender.split`@`[0]
 		await conn.updatePresence(m.chat, Presence.composing)
 		conn.send2ButtonLoc(m.chat, await _func.buffer(setting.cover), menu(number, isPrefix, readMore, setting), global.footer, 'SCRIPT', `${isPrefix}script`, `OWNER`, `${isPrefix}owner`, m)

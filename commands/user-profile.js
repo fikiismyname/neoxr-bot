@@ -17,9 +17,9 @@ exports.run = {
 			}
 		} catch (e) {
 	} finally {
-		let users = global.db.users[user]
+		let users = global.users[user]
 		if (typeof users == 'undefined') return m.reply(`*Can't find user data.*`)
-		let setting = global.db.setting
+		let setting = global.setting
 		let pic = await _func.buffer('./media/images/default.jpg')
 	try {
 		pic = await _func.buffer(await conn.getProfilePicture(user))

@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['setmsg', 'setheader', 'setfooter', 'setwm', 'setcover'],
 	async: async (m, {conn, text, _func, isPrefix, command }) => {
-		let setting = global.db.setting
+		let setting = global.setting
 		if (command == 'setmsg') {
 			if (!text) return m.reply(`• *Example* : ${isPrefix + command} I'am a Just Simple WhatsApp Bot`)
 			setting.msg = text

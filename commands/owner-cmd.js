@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['disable', 'enable'],
 	async: async (m, { conn, args, isPrefix, command }) => {
-		let cmd = global.db.setting
+		let cmd = global.setting
 		await conn.updatePresence(m.chat, Presence.composing)
 		if (!args || !args[0]) return m.reply(`• *Example* : ${isPrefix + command} tiktok*`)
 		if (command == 'disable') {

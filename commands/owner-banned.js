@@ -17,8 +17,8 @@ exports.run = {
 			}
 		} catch (e) {
 	} finally {
-		let userF = global.db.users
-		let ownerF = (global.db.setting.owner).includes(user)
+		let userF = global.users
+		let ownerF = (global.setting.owner).includes(user)
 		if (typeof userF[user] == 'undefined') return m.reply(`*Can't find user data.*`)
 	if (command == 'ban') { 
 		if (ownerF) return m.reply(`*You can't banned owner number.*`)

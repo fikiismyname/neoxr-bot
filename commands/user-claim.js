@@ -3,7 +3,7 @@ exports.run = {
 	usage: ['claim'],
 	async: async (m, { conn, _func }) => {
 		await conn.updatePresence(m.chat, Presence.composing)
-		let user = global.db.users[m.sender]
+		let user = global.users[m.sender]
 		let timeClaim = 3600000
 		let claimed = new Date(user.lastclaim + timeClaim)
 		let timeout = claimed - new Date()

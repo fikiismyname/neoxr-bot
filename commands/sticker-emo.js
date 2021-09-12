@@ -5,7 +5,7 @@ exports.run = {
 	usage: ['emo'],
 	async: async (m, { conn, args, _func, isPrefix, command }) => {
 	try {
-		let exif = global.db.setting
+		let exif = global.setting
 		await conn.updatePresence(m.chat, Presence.composing)
 		if (!args || !args[0]) return m.reply(`• *Example* : ${isPrefix + command} 🙂`)
 		let json = await emoji.get(args[0])

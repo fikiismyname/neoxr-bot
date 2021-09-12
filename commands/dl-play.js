@@ -18,7 +18,7 @@ exports.run = {
 		y += '•  *Views* : ' + Number(yt.views).toLocaleString().replace(/,/g, '.') + '\n'
 		y += '•  *Publish* : ' + yt.ago + '\n'
 		y += '•  *Channel* : ' + yt.author.name
-		conn.send2ButtonLoc(m.chat, await _func.buffer(thumb), `${y}`, global.db.setting.footer, 'AUDIO', `${isPrefix}ytmp3 ${yt.url}`, 'VIDEO', `${isPrefix}ytmp4 ${yt.url}`, m)
+		conn.send2ButtonLoc(m.chat, await _func.buffer(thumb), `${y}`, global.setting.footer, 'AUDIO', `${isPrefix}ytmp3 ${yt.url}`, 'VIDEO', `${isPrefix}ytmp4 ${yt.url}`, m)
 	} catch {
 		return m.reply(_func.status.error)
 	}},

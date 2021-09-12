@@ -6,7 +6,7 @@ exports.run = {
 		if (!text) return conn.reply(m.chat, `• *Example* : ${usedPrefix + command} wildan | izzudin`, m)
 		if (!text.match(/[|]/gi)) {
 			x = text
-			y = global.db.setting.sk_author
+			y = global.setting.sk_author
 		} else {
 			let [ pack, author ] = text.split`|`
 			x = pack

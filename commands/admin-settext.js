@@ -2,7 +2,7 @@ let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
 	usage: ['textwel', 'textleft'],
 	async: async (m, { conn, text, _func, isPrefix, command }) => {
-		let setup = global.db.groups[m.chat]
+		let setup = global.groups[m.chat]
 		conn.updatePresence(m.chat, Presence.composing)
 		if (command == 'textwel') {
 			if (!text) return m.reply(formatWel(isPrefix, command))
