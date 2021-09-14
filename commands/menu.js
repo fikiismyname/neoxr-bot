@@ -40,7 +40,6 @@ ${readMore}
 	›  ${prefix}sk *reply foto / video*
 	›  ${prefix}sgif *reply video / gif*
 	›  ${prefix}swm *pack | author*
-	›  ${prefix}take *pack | author*
 	›  ${prefix}tovid *reply gif sticker*
 
 *03.*  A U D I O - T O O L S
