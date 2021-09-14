@@ -19,7 +19,7 @@ exports.run = {
 		y += '	›  *Views* : ' + Number(yt.views).toLocaleString().replace(/,/g, '.') + '\n'
 		y += '	›  *Channel* : ' + yt.author.name + '\n'
 		await conn.updatePresence(m.chat, Presence.composing)
-		conn.send2ButtonLoc(m.chat, await _func.buffer(yt.thumbnail), y, global.footer, 'AUDIO', `${usedPrefix}ytmp3 ${yt.url}`, 'VIDEO', `${usedPrefix}ytmp4 ${yt.url}`)
+		conn.send2ButtonLoc(m.chat, await _func.buffer(yt.thumbnail), y, global.footer, 'AUDIO', `${isPrefix}ytmp3 ${yt.url}`, 'VIDEO', `${isPrefix}ytmp4 ${yt.url}`)
 	} catch {
 		return m.reply(_func.status.error)
 	}},
