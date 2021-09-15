@@ -68,9 +68,9 @@ ${readMore}
 	›  ${prefix}tikmp3 *link*
 	›  ${prefix}tiktok *link*
 	›  ${prefix}tikwm *link*
+	›  ${prefix}video *query*
 	›  ${prefix}ytmp3 *link*
 	›  ${prefix}ytmp4 *link*
-	›  ${prefix}video *query*
 	
 *05.*  O N L Y - G R O U P
 
@@ -81,7 +81,7 @@ ${readMore}
 	›  ${prefix}tagme
 	›  ${prefix}steal *@target*
 	›  ${prefix}saveme *name*
-	›  ${prefix}wame *@target*
+	›  ${prefix}wame
 
 *06.*  O T H E R - M E N U
 
