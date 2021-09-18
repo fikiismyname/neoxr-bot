@@ -20,7 +20,7 @@ exports.run = {
 		if(chSize.oversize) return m.reply(`• *The file size you requested is ${json.data.size}, the size exceeds the limit, please download it yourself via this link* :\n\n• ${await _func.crop(json.data.link)}*`)
 		m.reply(y).then(() => {
 			conn.updatePresence(m.chat, Presence.composing)
-			conn.sendDoc(m.chat, json.data.link, unescape(decode(json.data.filename)), m)
+			conn.sendDoc2(m.chat, json.data.link, unescape(decode(json.data.filename)), m)
 		})
 	} catch {
 		return m.reply(_func.status.error)

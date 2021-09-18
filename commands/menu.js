@@ -114,6 +114,9 @@ return `
 	›  ${prefix}delown
 	›  ${prefix}enable
 	›  ${prefix}disable
+	›  ${prefix}setcmd
+	›  ${prefix}delcmd
+	›  ${prefix}listcmd
 	›  ${prefix}setmsg
 	›  ${prefix}setwm
 	›  ${prefix}setcover
