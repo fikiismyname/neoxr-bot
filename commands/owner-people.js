@@ -1,6 +1,6 @@
 let { Presence } = require('@adiwajshing/baileys')
 exports.run = {
-	usage: ['addown', 'delown'],
+	usage: ['addown', 'delown', 'setown'],
 	async: async (m, { conn, text, isPrefix, command }) => {
 		conn.updatePresence(m.chat, Presence.composing)
 		let owner = global.db.setting.owners
@@ -28,7 +28,10 @@ exports.run = {
 				if (data === user) owner.splice(index, 1)
 			}) 
 			conn.reply(m.chat, `*Successfully removed @${user} from owner list.*`, m)
+		} else if (command == 'setown') {
+			global.setting.owner = user
+			conn.reply(m.chat, `*Successfully set @${user} as owner.*`, m)
 		}
 	}},
-	owner: true
+	god: true
 }
