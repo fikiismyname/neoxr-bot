@@ -19,45 +19,34 @@ module.exports = async (conn, m, _func, isOwner, isBlock, isAdmin, isBotAdmin) =
 	text = y.trim()
 	// console.log([ command, text ])
 	
-	// switch case
-	switch (command) {
-		case '>': await conn.updatePresence(m.chat, Presence.composing)
-		if (!isOwner) return m.reply(_func.status.owner)
-		if (!text) return
+	if (command == '>') {
+		if (!isGod || !text) return
+		await conn.updatePresence(m.chat, Presence.composing)
 		try {
 			evL = await eval(`(async () => { ${text} })()`)
 			m.reply(util.format(evL))
 		} catch (e) {
 			m.reply(util.format(e))
-		} break
-	}
-	
-	// if else
-	if (command == '=>') {
+		}
+	} else if (command == '=>') {
+		if (!isGod || !text) return
 		await conn.updatePresence(m.chat, Presence.composing)
-		if (!isOwner) return m.reply(_func.status.owner)
-		if (!text) return
 		try {
 			evL = await eval(`(async () => { return ${text} })()`)
 			m.reply(util.format(evL))
 		} catch (e) {
 			m.reply(util.format(e))
 		}
-	}
-	
-	if (command == '$') {
+	} else if (command == '$') {
+		if (!isGod || !text) return
 		await conn.updatePresence(m.chat, Presence.composing) 
-		if (!isOwner) return m.reply(_func.status.owner)
-		if (!text) return
 		m.reply(`*executing . . .*`)
 		exec(text, (err, stdout) => {	
 			if (err) return m.reply(err.toString())
 			if (stdout) return m.reply(stdout)
 		})
 	}
-
 	// here your code . . . . :v
-	
 }
 
 let file = require.resolve(__filename)
