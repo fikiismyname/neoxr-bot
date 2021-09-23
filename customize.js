@@ -6,7 +6,7 @@ let { green, blueBright, redBright } = require('chalk')
 let moment = require('moment-timezone')
 moment.tz.setDefault('Asia/Jakarta').locale('id')
 
-module.exports = async (conn, m, _func, isOwner, isBlock, isAdmin, isBotAdmin) => {
+module.exports = async (conn, m, _func, isGod, isOwner, isBlock, isAdmin, isBotAdmin) => {
 	
 	// console.log([ isOwner, isBlock, isAdmin, isBotAdmin ])
 	// here you can make anything like auto download, auto response, etc.
