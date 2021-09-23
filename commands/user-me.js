@@ -8,7 +8,7 @@ exports.run = {
 		let pic = await _func.buffer('./media/images/default.jpg')
 		let _own = [ global.setting.owner, ...global.setting.owners ]
 	try {
-		pic = await _func.buffer(await conn.getProfilePicture(m.sender))
+		pic = await conn.getProfilePicture(m.sender)
 	} catch {
 		} finally {
 		let getname = await conn.getName(m.sender, true)

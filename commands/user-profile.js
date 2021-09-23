@@ -23,7 +23,7 @@ exports.run = {
 		let setting = global.db.setting
 		let pic = await _func.buffer('./media/images/default.jpg')
 	try {
-		pic = await _func.buffer(await conn.getProfilePicture(user))
+		pic = await conn.getProfilePicture(user)
 	} catch {
 		} finally {
 		let getname = await conn.getName(user, true)
