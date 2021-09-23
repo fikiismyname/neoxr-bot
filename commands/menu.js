@@ -77,6 +77,7 @@ ${readMore}
 	›  ${prefix}contact *@target*
 	›  ${prefix}delete
 	›  ${prefix}link
+	›  ${prefix}groupinfo
 	›  ${prefix}tag *text*
 	›  ${prefix}tagme
 	›  ${prefix}steal *@target*
