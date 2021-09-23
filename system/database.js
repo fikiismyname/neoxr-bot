@@ -1,4 +1,4 @@
-module.exports = (conn, m) => {
+module.exports = (m) => {
 
 if (typeof global.db.users[m.sender] == 'undefined') {
 		global.db.users[m.sender] = {
