@@ -38,12 +38,6 @@ if (typeof global.db.users[m.sender] == 'undefined') {
         }
 	}
 	
-	if (typeof global.db.private[m.chat] == 'undefined' && m.chat.endsWith('s.whatsapp.net')) {
-		global.db.private[m.chat] = {
-			mute: false
-        }
-	}
-	
 	if (typeof global.db.chats[m.chat] == 'undefined') {
 		global.db.chats[m.chat] = {
 			command: 0,
